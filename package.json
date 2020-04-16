@@ -1,0 +1,19 @@
+{
+  "name": "mfcu",
+  "version": "1.0.1",
+  "description": "package for mfc",
+  "main": "index.js",
+  "scripts": {
+    "refreshVSToken": "vsts-npm-auth -config .npmrc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Software-wj/mfc.git"
+  },
+  "author": "subash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Software-wj/mfc/issues"
+  },
+  "homepage": "https://github.com/Software-wj/mfc#readme"
+}
