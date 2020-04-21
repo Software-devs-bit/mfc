@@ -7,6 +7,7 @@ trigger:
 - master
 
 pool:
+
   vmImage: 'windows-latest'
 
 variables:
@@ -31,3 +32,8 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+
+- task: CopyFiles@2
+  inputs:
+    Contents: '**'
+    TargetFolder: 
