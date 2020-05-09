@@ -6,8 +6,7 @@
 trigger:
 -
 
-pool:
-  name:'Default' 
+pool: 'Default' 
   #vmImage:'windows-latest'
 
 variables:
