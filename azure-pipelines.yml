@@ -18,6 +18,7 @@ steps:
 - task: NuGetToolInstaller@1
   inputs:
     versionSpec: 
+    checkLatest: true
 - task: NuGetCommand@2
   inputs:
     command: 'restore'
@@ -26,13 +27,8 @@ steps:
     noCache: true
     disableParallelProcessing: true
     restoreDirectory: 'packages/'
-    checkLatest: true
-- task: NuGetCommand@2
-  inputs:
-    command: 'restore'
-    restoreSolution: '$(solution)'
-    feedsToUse: 'select'
-    noCache: true
+    #checkLatest: true
+
  # inputs:
   #  restoreSolution: '$(solution)'
 
