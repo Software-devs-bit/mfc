@@ -6,7 +6,7 @@
 trigger:
 -
 
-pool: 'Azure Pipelines' 
+pool: 'Default' 
   # name:'Azure Pipelines'
   # vmImage:'windows-latest'
 
