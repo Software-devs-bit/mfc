@@ -6,8 +6,8 @@
 trigger:
 -
 
-pool: 
-   name:'Azure Pipelines'
+pool: 'Azure Pipelines' 
+  # name:'Azure Pipelines'
   # vmImage:'windows-latest'
 
 variables:
