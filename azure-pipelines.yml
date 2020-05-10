@@ -25,8 +25,8 @@ steps:
     restoreSolution: '$(solution)'
     feedsToUse: 'select'
     noCache: true
-  inputs:
-    restoreSolution: '$(solution)'
+ # inputs:
+  #  restoreSolution: '$(solution)'
 
 - task: VSBuild@1
   inputs:
