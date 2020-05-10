@@ -21,6 +21,12 @@ steps:
     checkLatest: true
 
 - task: NuGetCommand@2
+- task: NuGetCommand@2
+  inputs:
+    command: 'restore'
+    restoreSolution: '$(solution)'
+    feedsToUse: 'select'
+    noCache: true
   inputs:
     restoreSolution: '$(solution)'
 
