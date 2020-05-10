@@ -17,7 +17,7 @@ variables:
 steps:
 #- task: NuGetToolInstaller@1
  # inputs:
-   versionSpec: '4x'
+  # versionSpec: '4x'
 - task: NuGetCommand@2
   inputs:
     command: 'pack'
