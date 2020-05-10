@@ -6,8 +6,9 @@
 trigger:
 -
 
-pool: 'Azure Pipelines' 
-  #vmImage:'windows-latest'
+pool:
+   name:'Azure Pipelines'
+   vmImage:'windows-latest'
 
 variables:
   solution: '**/*.sln'
@@ -18,6 +19,7 @@ steps:
 #- task: NuGetToolInstaller@1
  # inputs:
   # versionSpec: '4x'
+
 - task: NuGetCommand@2
   inputs:
     command: 'pack'
