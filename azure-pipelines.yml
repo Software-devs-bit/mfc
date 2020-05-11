@@ -35,18 +35,18 @@ steps:
  # inputs:
   #  restoreSolution: '$(solution)'
 
-- task: VSBuild@1
-  inputs:
-    solution: '$(solution)'
-    vsVersion: '14.0'
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
-    clean: true
+#- task: VSBuild@1
+ # inputs:
+  #  solution: '$(solution)'
+   # vsVersion: '14.0'
+    #platform: '$(buildPlatform)'
+    #configuration: '$(buildConfiguration)'
+    #clean: true
 
-- task: VSTest@2
-  inputs:
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
+#- task: VSTest@2
+ # inputs:
+  #  platform: '$(buildPlatform)'
+   # configuration: '$(buildConfiguration)'
 
 - task: CopyFiles@2
   inputs:
