@@ -5,7 +5,7 @@
 
 #trigger: none
 
-#pr: none
+pr: none
 
 pool: 'Default'  
   # name:'Default'
