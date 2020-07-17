@@ -7,11 +7,15 @@
 
 
 
-#trigger: none
-pr: none
 
 
 
+
+
+
+trigger: none
+#-
+#pr: none
 
 pool: 'Default'  
   # name:'Default'
