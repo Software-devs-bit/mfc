@@ -1,7 +1,7 @@
 ================================================================================
     MICROSOFT FOUNDATION CLASS LIBRARY : MFCSDIAppln Project Overview
 ===============================================================================
-About this application:
+About this application
 =========================================
 
 This sample application is created to demonstrate Single Document Interface(SDI) with multiple views in MFC.
