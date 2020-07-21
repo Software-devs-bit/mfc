@@ -4,57 +4,25 @@
 # https://docs.microsoft.com/azure/devops/pipelines/apps/windows/dot-net
 
 trigger:
--
-#pr:none
+ 
+  - none
+pr:
+  - none
 
-pool: 'Default'  
-  # name:'Default'
-  # vmImage:'windows-latest'
+jobs:
+  - job: Windows  
 
-variables:
-  solution: '**/*.sln'
-  buildPlatform: 
-  buildConfiguration: 
+    pool:   
+      vmImage: 'windows-latest'
+    steps:  
 
-steps:
-#- task: NuGetToolInstaller@1
- # inputs:
-  # versionSpec: '4x'
+    - task: MSBuild@1
+      inputs:
+       solution: '**/*.sln'
+       clean: true
 
-#- task: NuGetCommand@2
- # inputs:
-  #  command: 'pack'
-   # packagesToPack: '**/*.csproj'
-   # versioningScheme: 'byPrereleaseNumber'
-   # majorVersion: '1'
-   # minorVersion: '0'
-   # patchVersion: '0'
-   # includeSymbols: true
-   # toolPackage: true
-    #checkLatest: true
-
- # inputs:
-  #  restoreSolution: '$(solution)'
-
-#- task: VSBuild@1
- # inputs:
-  #  solution: '$(solution)'
-   # vsVersion: '14.0'
-    #platform: '$(buildPlatform)'
-    #configuration: '$(buildConfiguration)'
-    #clean: true
-
-#- task: VSTest@2
- # inputs:
-  #  platform: '$(buildPlatform)'
-   # configuration: '$(buildConfiguration)'
-
-- task: MSBuild@1
-  inputs:
-    solution: '**/*.sln'
-    clean: true
-
-- task: CopyFiles@2
-  inputs:
-    Contents: '**\$(BuildConfiguration)\**\?(*.exe|*.dll|*.pdb)'
-    TargetFolder: 'Build.ArtifactStagingDirectory'
+    - task: CopyFiles@2
+      inputs:
+       Contents: '**\$(BuildConfiguration)\**\?(*.exe|*.dll|*.pdb)'
+       TargetFolder: 'Build.ArtifactStagingDirectory'
+>>>>>>> a046bd55e980b1b94cc68772ce474805781a06d6
