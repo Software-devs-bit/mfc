@@ -20,7 +20,7 @@ jobs:
        solution: '**/*.sln'
        clean: true
 
-    #- task: CopyFiles@2
+    - task: CopyFiles@2
       inputs:
        Contents: '**\$(BuildConfiguration)\**\?(*.exe|*.dll|*.pdb)'
        TargetFolder: 'Build.ArtifactStagingDirectory'
