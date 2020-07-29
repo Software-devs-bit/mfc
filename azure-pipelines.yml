@@ -4,7 +4,9 @@
 # https://docs.microsoft.com/azure/devops/pipelines/apps/windows/dot-net
 
 trigger:
-  - none
+  tags:
+    include:
+    - v1.0
 pr:
   - none
 
@@ -20,7 +22,7 @@ jobs:
        solution: '**/*.sln'
        clean: true
 
-   #- task: CopyFiles@2
+    - task: CopyFiles@2
       inputs:
        Contents: '**\$(BuildConfiguration)\**\?(*.exe|*.dll|*.pdb)'
        TargetFolder: 'Build.ArtifactStagingDirectory'
