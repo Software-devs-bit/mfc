@@ -9,7 +9,7 @@ trigger:
     #- v1.*
    branches:
      include:
-       - refs/tags/v1.0
+       - refs/tags/{v1.0}
 pr:
   - none
 
