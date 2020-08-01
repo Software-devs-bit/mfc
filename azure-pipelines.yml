@@ -6,11 +6,10 @@
 trigger:
   branches:
     include:
-    #- '*'
     - refs/tags/{v1.1}
     
-#pr:
-#  - none
+pr:
+  - none
 
 jobs:
   - job: Windows  
