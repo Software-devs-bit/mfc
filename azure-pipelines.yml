@@ -4,9 +4,10 @@
 # https://docs.microsoft.com/azure/devops/pipelines/apps/windows/dot-net
 
 trigger:
-  tags:
+  branches:
     include:
-    - v1.*
+    - '*'
+    - refs/tags/{v1.1}
     
 #pr:
 #  - none
