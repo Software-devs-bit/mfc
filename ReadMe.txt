@@ -12,7 +12,7 @@ This is a MFC SDI application and it has three views as follows
 2. Form View - Contains a form with different controls editbox, combobox
 3. Edit View - User can enter text on the client area
 
-In the toolbar in the application program written by me there is a combobox with these three view options. By default 'Main View' is selected. This combobox is used to control the view display. The selected view(in combobox) will get displayed on the client area of the main frame window.
+In the toolbar in the application program written by me and saved there is a combobox with these three view options. By default 'Main View' is selected. This combobox is used to control the view display. The selected view(in combobox) will get displayed on the client area of the main frame window.
 By default the application loaded with 'Main View'. The user can change the views based on his choice and the client area will display the view based on user's selection.
 
 ==========================================
