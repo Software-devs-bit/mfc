@@ -4,8 +4,15 @@
 # https://docs.microsoft.com/azure/devops/pipelines/apps/windows/dot-net
 
 trigger:
+
  
   - none
+
+  tags:
+    include:
+    - v1.*
+    
+
 pr:
   - none
 
