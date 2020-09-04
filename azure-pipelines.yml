@@ -3,6 +3,7 @@
 # Add steps that publish symbols, save build artifacts, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/apps/windows/dot-net
 
+
 trigger:
   tags:
     include:
@@ -27,3 +28,4 @@ jobs:
       inputs:
        Contents: '**\$(BuildConfiguration)\**\?(*.exe|*.dll|*.pdb)'
        TargetFolder: 'Build.ArtifactStagingDirectory'
+
