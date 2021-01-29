@@ -1,1 +1,1 @@
-create write  
+create write cricket  
