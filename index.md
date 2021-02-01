@@ -1,1 +1,1 @@
-create write cricket in foreign  
+create write cricket in foreign countries  
